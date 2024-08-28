@@ -1,0 +1,63 @@
+{
+  "name": "iframe-server",
+  "version": "1.0.0",
+  "description": "modified version of live-server to support injecting JS for iframe",
+  "keywords": [
+    "front-end",
+    "development",
+    "tool",
+    "server",
+    "http",
+    "cli"
+  ],
+  "author": "Aizhe",
+  "dependencies": {
+    "chokidar": "^2.0.4",
+    "colors": "latest",
+    "connect": "^3.6.6",
+    "cors": "latest",
+    "event-stream": "3.3.4",
+    "faye-websocket": "0.11.4",
+    "http-auth": "3.1.x",
+    "morgan": "^1.9.1",
+    "object-assign": "latest",
+    "open": "^8.4.2",
+    "send": "latest",
+    "serve-index": "^1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "jshint": "^2.9.6",
+    "supertest": "^3.3.0"
+  },
+  "scripts": {
+    "lint": "eslint iframe-server.js index.js",
+    "hint": "jshint iframe-server.js index.js"
+  },
+  "bin": {
+    "live-server": "./iframe-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aizhee/iframe-server"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "preferGlobal": true,
+  "license": "MIT",
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "quotes": 0,
+      "curly": 0,
+      "strict": 0,
+      "no-process-exit": 0,
+      "eqeqeq": 1,
+      "no-unused-vars": 1,
+      "no-shadow": 1
+    }
+  }
+}

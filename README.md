@@ -48,7 +48,7 @@ Command line parameters:
 * `--https-module=MODULE_NAME` - Custom HTTPS module (e.g. `spdy`)
 * `--help | -h` - display terse usage hint and exit
 * `--version | -v` - display version and exit
-* `--script` - add your own custom javascript code to be injected
+* `--inject-js` - add your own custom javascript code to be injected
 
 Default options:
 
@@ -71,7 +71,7 @@ var params = {
 	wait: 1000, // Waits for all changes, before reloading. Defaults to 0 sec.
 	mount: [['/components', './node_modules']], // Mount a directory to a route.
 	logLevel: 2, // 0 = errors only, 1 = some, 2 = lots
-	script: `console.log("hello world!");` // javascript code to be injected in the page/iframed content
+	injectJS: `console.log("hello world!");` // javascript code to be injected in the page/iframed content
 };
 iframeServer.start(params);
 ```

@@ -125,7 +125,7 @@ function entryPoint(staticHandler, file) {
  * @param file {string} Path to the entry point file
  * @param wait {number} Server will wait for all changes, before reloading
  * @param htpasswd {string} Path to htpasswd file to enable HTTP Basic authentication
- * @param script {string} JS code to be added as a script
+ * @param injectJS {string} JS code to be added as a script
  */
 IframeServer.start = function(options) {
 	options = options || {};

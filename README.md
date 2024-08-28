@@ -80,7 +80,7 @@ iframeServer.start(params);
 License
 -------
 
-Uses MIT licensed code from [Connect](https://github.com/senchalabs/connect/), [Roots](https://github.com/jenius/roots) [Live-Server](https://github.com/tapio/live-server).
+Uses MIT licensed code from [Connect](https://github.com/senchalabs/connect/), [Roots](https://github.com/jenius/roots), and[Live-Server](https://github.com/tapio/live-server).
 
 (MIT License)
 

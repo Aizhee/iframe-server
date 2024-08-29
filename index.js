@@ -139,7 +139,7 @@ IframeServer.start = function(options) {
 		"" : ((options.open === null || options.open === false) ? null : options.open);
 	if (options.noBrowser) openPath = null; // Backwards compatibility with 0.7.0
 	var file = options.file;
-	var staticServerHandler = staticServer(root);
+	
 	var wait = options.wait === undefined ? 100 : options.wait;
 	var browser = options.browser || null;
 	var htpasswd = options.htpasswd || null;
@@ -150,6 +150,8 @@ IframeServer.start = function(options) {
 	if (script) {
 		INJECTED_CODE += "<script>" + script + "</script>";
 	}
+
+	var staticServerHandler = staticServer(root);
 
 	// Setup a web server
 	var app = connect();

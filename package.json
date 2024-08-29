@@ -1,6 +1,6 @@
 {
   "name": "iframe-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "modified version of live-server to support injecting JS for iframe",
   "keywords": [
     "front-end",
